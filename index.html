@@ -122,7 +122,12 @@
   }
   .entry .left,
   .subentry .left {
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .entry .right,
+  .subentry .right {
+    flex: 0 0 auto;
   }
 
   /* ---------- Body copy ---------- */
@@ -161,6 +166,15 @@
   .url {
     margin: 0.08rem 0 0.4rem 1.5em;
     font-size: 0.94em;
+    overflow-wrap: anywhere;
+  }
+
+  .links {
+    margin: 0.08rem 0 0.4rem 1.5em;
+    font-size: 0.94em;
+  }
+  .links p {
+    margin: 0.04rem 0;
     overflow-wrap: anywhere;
   }
 
@@ -225,11 +239,7 @@
   <!-- ============ RESEARCH PROFILE ============ -->
   <section>
     <h2>Research Profile</h2>
-    <p class="lead">Historian and defense policy researcher. Master of Public Policy candidate at Rutgers University, concentrating in political processes and institutions with a research focus on foreign affairs and defense policy, and Founder and Chief Executive Officer of Agard Research Associates Inc., a nonpartisan 501(c)(3) public policy research institute in New Jersey.
-Present research addresses strategic stability in an age of intelligentized warfare: escalation dynamics under incomplete information, PLA counterspace doctrine and the vulnerability of space-based nuclear command and control, the logic of systems destruction warfare, the susceptibility of military artificial intelligence to poisoned training data, and the organizational and cognitive habits of those who decide.
-Adjacent lines of inquiry treat doctrinal reform and force design; technical military analysis of platforms, weapon systems, and the kill chains within which they operate; defense economics, which joins shifts in the military balance to budgets, arms transfer flows, and the pricing of commercial risk; and intelligence analysis of adversary capability and intent.
-Methods proceed by doctrinal genealogy, structured focused comparison, process tracing, and structured analytic techniques, joined to quantitative and geospatial modeling and to purpose-built simulation software. Where the established instruments of the field will not answer a question, I build my own.
-This work rests upon a formation in history, anthropology, and archaeology, with a sustained regard for material culture and the longue durée; strategy is a human artifact and yields its logic most readily to those who study it as such.</p>
+    <p class="lead">Historian and defense policy researcher. Master of Public Policy candidate at Rutgers University, concentrating in political processes and institutions with a research focus on foreign affairs and defense policy. Founder and Chief Executive Officer of Agard Research Associates Inc., a nonpartisan 501(c)(3) research and policy analysis institute in New Jersey. Present research, which I pursue independently of that institute, attends to the problem of strategic stability in an age of intelligentized warfare: escalation dynamics under incomplete information, PLA counterspace doctrine and the vulnerability of space-based nuclear command and control, the logic of systems destruction warfare, the susceptibility of military artificial intelligence to poisoned training data, and the organizational and cognitive habits of those who decide. Methods proceed by doctrinal genealogy, structured focused comparison, and process-tracing, joined to quantitative and geospatial modeling and to purpose-built simulation software. Where the established instruments of the field will not answer a question, I build my own. This work rests upon a formation in history, anthropology, and archaeology, with an abiding regard for material culture and the longue durée, for strategy is a human artifact and yields its logic most readily to those who study it as such.</p>
   </section>
 
   <!-- ============ EDUCATION ============ -->
@@ -271,8 +281,8 @@ This work rests upon a formation in history, anthropology, and archaeology, with
     <p class="subentry"><span class="left">Chairman and President of the Board of Directors; Chief Executive Officer</span><span class="right">March 2025 to Present</span></p>
     <ul>
       <li>Established the organization and secured 501(c)(3) tax-exempt status with public charity designation for a nonpartisan interdisciplinary research institute producing scholarly research in the humanities and social sciences, policy analysis, and public programming.</li>
-      <li>Direct the research agenda across institutional design, election administration, and New Jersey and federal employment and labor policy, holding outputs to the standards of academic peer discourse whilst keeping them legible to practitioners, policymakers, and the engaged public.</li>
-      <li>Author and publish the institute's policy analyses, including reports on federal documentary proof of citizenship proposals, the New Jersey Pay and Benefits Transparency Act, and the state's temporary disability and family leave insurance programs.</li>
+      <li>Direct the research agenda across institutional design, election administration, education policy, consumer protection, and New Jersey and federal employment and labor policy, holding outputs to the standards of academic peer discourse whilst keeping them legible to practitioners, policymakers, and the engaged public.</li>
+      <li>Author and publish the institute's policy analyses, including reports on federal documentary proof of citizenship proposals, the New Jersey Pay and Benefits Transparency Act, the state's temporary disability and family leave insurance programs, its phone-free schools mandate for K-12 public education, and its prohibition on surveillance pricing of groceries.</li>
       <li>Direct editorial, public relations, and media operations, including custom media design, publication delivery and output, and advertising campaign development.</li>
       <li>Design and deliver humanities-anchored K-12 educational programming and professional development workshops for New Jersey small businesses and private schools on cultural competency, social and emotional learning, and regulatory compliance under FERPA, HIPAA, OSHA, and EEOC standards.</li>
       <li>Direct programmatic operations spanning employment assistance prioritizing veterans and underserved communities, civic education, and behavioral health and trauma support partnerships.</li>
@@ -303,10 +313,12 @@ This work rests upon a formation in history, anthropology, and archaeology, with
 
     <h3 class="subhead">Peer-Reviewed Articles</h3>
 
-    <p class="cite">Agard, Alyssa I. "Deterrence in Orbit: PLA Counterspace Doctrine, JADO, and the Vulnerability of Space-Based Nuclear Command and Control." <em>Journal of Advanced Military Studies</em>. Forthcoming, Fall 2026.</p>
+    <p class="cite">Agard, Alyssa I. "Deterrence in Orbit: PLA Counterspace Doctrine, JADO, and the Vulnerability of Space-Based Nuclear Command and Control." <em>Journal of Advanced Military Studies</em> 17, no. 2 (Fall 2026): 182-209.</p>
     <p class="annot">Examines whether Joint All-Domain Operations (JADO), a doctrinal modernization advancing on a track largely separate from the modernization of nuclear command, control, and communications (NC3), accounts for the nuclear escalation risks that PLA counterspace capabilities pose to dual-use, space-based NC3 infrastructure. Locates the danger in a structural collision between American dependence on space for information advantage and a Chinese theory of victory that treats information systems as the primary target, bridging the nuclear-conventional entanglement and JADO doctrinal literatures, which have developed in parallel. Introduces the space-nuclear firewall as an analytical concept naming not the structural condition of entanglement but the doctrinal assumption that entangled systems may be managed without differentiated treatment, and argues that this separation is operationally fictitious: systems destruction warfare targets the adversary's operational system as an integrated whole, indifferent to the nuclear character of what it contains, whilst American architecture places nuclear functions inside the conventional target set, so that undifferentiated attack produces unavoidable nuclear degradation and dual-use ambiguity becomes an escalation liability rather than a deterrent asset. Concludes that JADO, whose emphasis on cross-domain convergence deepens this entanglement whilst leaving the risk unmanaged, does not position United States forces for success where the space and nuclear domains intersect, and proposes a dedicated Space-Nuclear Integration Cell within the JADO planning architecture.</p>
-
-    <h3 class="subhead">Professional Journal Articles</h3>
+    <div class="links">
+      <p>DOI: <a href="https://doi.org/10.21140/mcuj.20261702009">https://doi.org/10.21140/mcuj.20261702009</a></p>
+      <p>Article: <a href="https://www.usmcu.edu/Outreach/Marine-Corps-University-Press/MCU-Journal/JAMS-vol-17-no-2/Deterrence-in-Orbit/">https://www.usmcu.edu/Outreach/Marine-Corps-University-Press/MCU-Journal/JAMS-vol-17-no-2/Deterrence-in-Orbit/</a></p>
+    </div>
 
     <p class="cite">Agard, Alyssa I. "Teach the Machine to Lose." <em>U.S. Naval Institute Proceedings</em>. Forthcoming; anticipated in the November 2026 issue. Second Prize, 2026 Marine Corps Essay Contest.</p>
     <p class="annot">Argues that Marine stand-in forces, operating under persistent Chinese observation inside the first island chain, should become the joint force's forward data adversaries, presenting engineered and deliberately inconsistent signatures in peacetime so that the targeting and decision models the People's Liberation Army trains on those observations learn false associations before any conflict begins. Grounds the concept in PLA writings that name data as the foundation of intelligentized warfare and warn that such data can be poisoned, and in clean-label poisoning research showing that engineered but correctly labeled samples, gathered by the adversary's own sensors, can enter its training data without intrusion. Distinguishes the approach from evasion and decoying, which deceive a finished model only at the moment of classification, and from proposals that treat data poisoning as covert action, framing it instead as open military deception below the threshold of armed conflict within existing Marine Corps and joint doctrine. Reconceives counter-reconnaissance as the shaping rather than the mere denial of adversary collection, outlines an implementation that writes signature engineering into the training and readiness standards of forward units and sustains the effort as a standing campaign, and contends that PLA model hardening, far from foreclosing the effect, exacts its own toll in time, confidence, and trust.</p>
@@ -323,14 +335,25 @@ This work rests upon a formation in history, anthropology, and archaeology, with
 
     <h3 class="subhead">Policy Analyses and Institutional Reports</h3>
 
-    <p class="cite">Agard, Alyssa I. "Documentary Proof of Citizenship and Voter Identification in Federal Elections: A Policy Analysis of the SAVE America Act, Related Executive Actions, Judicial Rulings, and Implications for New Jersey Voters." Agard Research Associates Inc., 2026.</p>
+    <p class="cite">Agard, Alyssa I. "New Jersey's Prohibition on Surveillance Pricing of Groceries: A Policy Analysis of the Fair Price Protection Act, P.L.2026, c.55, Its Consumer Fraud Act Enforcement Framework, the Federal Legal Context, and the Evidence Base." Agard Research Associates Inc., September 2026.</p>
+    <p class="annot">Examines the statute, approved July 23, 2026, that supplements the Consumer Fraud Act by declaring it an unlawful practice to set or vary the sale price of groceries and other foodstuffs on the basis of personal data, save for price differences grounded in reasonable costs and group and loyalty program discounts meeting stated conditions, and that suspends the introduction of new electronic shelf labels for one year pending study by the New Jersey Innovation Authority. Establishes that the Attorney General holds the Act's only express civil action, which leaves the availability of consumer suits under the Consumer Fraud Act as its central unsettled legal question, and that no federal statute reviewed reaches the individualized pricing of consumer goods. Finds that the legislative record cites no empirical study of the prohibited practice and that each of the six legislative fiscal estimates treats the Act's cost and revenue as indeterminate, and assesses its bearing on consumers, SNAP households, retailers, delivery platforms, and workers ahead of the prohibition's August 1, 2027 effective date.</p>
+    <p class="url">DOI: <a href="https://doi.org/10.5281/zenodo.22999655">https://doi.org/10.5281/zenodo.22999655</a></p>
+
+    <p class="cite">Agard, Alyssa I. "Phone-Free Schools in New Jersey K-12 Public Education: A Policy Analysis of New Jersey P.L.2025, c.195, Its Implementation Framework, the Federal Legal Context, the Unfunded Mandate Question, and the Evidence on Student Device Restrictions." Agard Research Associates Inc., August 2026.</p>
+    <p class="annot">Examines the statute, approved January 8, 2026 and codified at N.J.S.A. 18A:36-40a and 18A:36-40b, that obliges every board of education, charter school, and renaissance school project to adopt, from the 2026-2027 school year, a policy on student use of internet-enabled devices aligned to guidelines issued by the Commissioner of Education, with a bell-to-bell prohibition on non-academic use as its floor, nine exception pathways, and local discretion over storage and discipline. Corrects two frequent misreadings, establishing that the law is a mandate upon local boards rather than a self-executing state ban and that no federal law requires phone-free schools in state systems. Documents a fiscal record in which a $3.0 million Fiscal Year 2026 grant line yielded roughly $980,000 in awards to 86 local education agencies, no legislative fiscal estimate was prepared, and the enacted Fiscal Year 2027 budget carries no appropriation, so that the unfunded mandate question remains open before the Council on Local Mandates. Labels every impact claim as Documented, Contested, or Projected, observes that no statewide bell-to-bell ban in the United States has yet been evaluated, and closes with watch items for the coming school year.</p>
+    <p class="url">DOI: <a href="https://doi.org/10.5281/zenodo.22925763">https://doi.org/10.5281/zenodo.22925763</a></p>
+
+    <p class="cite">Agard, Alyssa I. "Documentary Proof of Citizenship and Voter Identification in Federal Elections: A Policy Analysis of the SAVE America Act, Related Executive Actions, Judicial Rulings, and Implications for New Jersey Voters." Agard Research Associates Inc., July 2026.</p>
     <p class="annot">Distinguishes what has been enacted, proposed, and blocked among federal proposals to require documentary proof of citizenship for voter registration and photo identification for voting, establishing that no new federal requirement is in force for the November 2026 election, and demonstrating how qualifying documents trace back to a birth record or passport, creating an uneven burden for citizens whose legal name has changed since birth.</p>
+    <p class="url">DOI: <a href="https://doi.org/10.5281/zenodo.22902840">https://doi.org/10.5281/zenodo.22902840</a></p>
 
-    <p class="cite">Agard, Alyssa I. "Pay and Benefits Transparency in New Jersey Employment: A Policy Analysis of the New Jersey Pay and Benefits Transparency Act (P.L. 2024, c. 91), Its Proposed Implementing Regulations, the Federal Legal Landscape, and Measured Effects of Pay Transparency Policy." Agard Research Associates Inc., 2026.</p>
+    <p class="cite">Agard, Alyssa I. "Pay and Benefits Transparency in New Jersey Employment: A Policy Analysis of the New Jersey Pay and Benefits Transparency Act (P.L. 2024, c. 91), Its Proposed Implementing Regulations, the Federal Legal Landscape, and Measured Effects of Pay Transparency Policy." Agard Research Associates Inc., July 2026.</p>
     <p class="annot">Separates the statute now in force from the proposed departmental rules that remain non-binding, explains coverage and penalty assessment, examines what the state's first enforcement initiative revealed about early compliance among New Jersey's largest employers, and situates the law within the wider pay equity framework from the federal Equal Pay Act and Title VII to the Diane B. Allen Equal Pay Act.</p>
+    <p class="url">DOI: <a href="https://doi.org/10.5281/zenodo.22925599">https://doi.org/10.5281/zenodo.22925599</a></p>
 
-    <p class="cite">Agard, Alyssa I. "Temporary Disability and Family Leave Insurance in New Jersey: A Policy Analysis of New Jersey's Wage-Replacement Programs, the 2026 Benefit Parameters, the Job-Protection Amendments of P.L. 2025, Chapter 279, and the Federal Framework." Agard Research Associates Inc., 2026.</p>
+    <p class="cite">Agard, Alyssa I. "Temporary Disability and Family Leave Insurance in New Jersey: A Policy Analysis of New Jersey's Wage-Replacement Programs, the 2026 Benefit Parameters, the Job-Protection Amendments of P.L. 2025, Chapter 279, and the Federal Framework." Agard Research Associates Inc., July 2026.</p>
     <p class="annot">Sets out the 2026 parameters now in force for the two state-administered wage-replacement programs, centers on the amendments attaching reinstatement rights to TDI and FLI leave and expanding the New Jersey Family Leave Act, corrects the record on two widely misstated points concerning the benefit maximum and the enacted employer coverage threshold, and places the state programs within the federal framework.</p>
+    <p class="url">DOI: <a href="https://doi.org/10.5281/zenodo.22925852">https://doi.org/10.5281/zenodo.22925852</a></p>
 
     <h3 class="subhead">Commentary and Public Writing</h3>
 
@@ -343,27 +366,57 @@ This work rests upon a formation in history, anthropology, and archaeology, with
   <section>
     <h2>Independent Research Projects and Analytical Software</h2>
 
-    <p class="lead">Formal simulations delivered as interactive software, structured rather than fitted, each validated against documented empirical cases with sources auditable within the application. Code, documentation, and methodology are public and reproducible. Each project is independent work, unaffiliated with Agard Research Associates Inc.</p>
+    <p class="lead">Formal simulations, conditional forecasting models, and reconciled budget accounts delivered as interactive software, each tied to documented empirical cases or official source documents, with sources auditable within the application. Code, documentation, and methodology are public and reproducible.</p>
 
     <h3 class="entry"><span class="left">The Primacy Premium: Conditional Forecasts of Defense and Commercial Markets Under Chinese Military Primacy</span><span class="right">2026</span></h3>
-    <p class="subentry"><span class="left">Python modeling pipeline; in development</span><span class="right"></span></p>
-    <p class="annot">A conditional forecasting pipeline, calibrated on seven decades of IMF and SIPRI data, modeling how global defense spending, arms transfers, and commercial risk pricing would reallocate under three distinct pathways to Chinese military primacy by 2035. Reports full probability distributions across thousands of simulations per pathway, parses and validates official datasets, estimates response parameters by HAC regression, and exports analysis-ready tables for Power BI and Tableau.</p>
-    <p class="url"><a href="https://alyssaagard.github.io/primacy-premium-preview/">https://alyssaagard.github.io/primacy-premium-preview/</a></p>
+    <p class="subentry"><span class="left">Python modeling pipeline with interactive build and formal report</span><span class="right"></span></p>
+    <p class="annot">A conditional forecasting pipeline asking whether, should China attain nuclear parity and Indo-Pacific conventional primacy by 2035, the pathway to primacy conditions the reallocation of global defense expenditure, arms transfer flows, and commercial risk pricing more strongly than the endpoint itself. Seven parsers convert fourteen source families, among them IMF COFER, the SIPRI expenditure and arms transfer data, Swift settlement trackers, and NATO and FAS tables, into validated artifacts; every response parameter is estimated from seven decades of history by Newey-West (HAC) regression rather than assumed; and two seeded engines run ten thousand draws under each of three pathways (gradual accretion, American retrenchment, and violent demonstration), propagating parameter, innovation, and event-timing uncertainty jointly. Three hypotheses are tested with verdicts written by the pipeline itself, and results are delivered as an interactive page, a formal report, and analysis-ready exports for Power BI and Tableau.</p>
+    <div class="links">
+      <p>Model: <a href="https://alyssaagard.github.io/primacy-premium/">https://alyssaagard.github.io/primacy-premium/</a></p>
+      <p>Report: <a href="https://documents.alyssaagard.dev/#primacy-premium">https://documents.alyssaagard.dev/#primacy-premium</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/primacy-premium">https://github.com/alyssaagard/primacy-premium</a></p>
+    </div>
+
+    <h3 class="entry"><span class="left">Defense Budget Lab, FY2026 and FY2027: A Reconciled Line Item Account of the Defense Budget Request, Authorization, and Appropriation</span><span class="right">2026</span></h3>
+    <p class="subentry"><span class="left">Defense budget and cost analysis; Python generator, Excel workbook, and offline HTML page</span><span class="right"></span></p>
+    <p class="annot">An interactive reading of Congressional Research Service reports R48860 and R49023 on funding for selected weapon systems, joined line by line across fiscal years 2026 and 2027, and built on the premise that a defense budget is not one number but a sequence of documents whose differences carry the argument. Tracks 97 lines through the FY2026 cycle and 104 through the FY2027 request, holding each against every document that reports it so that request, authorization, and appropriation may be read across a single row. Every computed cell in the 27-sheet source workbook is a live formula rather than a stored result, and a cell whose source printed no figure remains blank rather than falling to zero. Of the 95 lines common to both years, 91 carry a figure in each, and the bridge between them runs from $168.56 billion to $253.59 billion, a change of $85.03 billion with six lines added, two dropped, and a residual of zero. A personnel module distributes 1,285,084 active duty members across twenty-four pay grades and back-solves the retired pay accrual and Thrift Savings Plan matching rates implied by the M-1 exhibits. The page runs entirely offline and carries its workbook within it, so that a reader handed only the file still holds the source.</p>
+    <div class="links">
+      <p>Lab: <a href="https://alyssaagard.github.io/defense-budget-lab/">https://alyssaagard.github.io/defense-budget-lab/</a></p>
+      <p>Report: <a href="https://documents.alyssaagard.dev/#defense-budget-lab">https://documents.alyssaagard.dev/#defense-budget-lab</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/defense-budget-lab">https://github.com/alyssaagard/defense-budget-lab</a></p>
+    </div>
 
     <h3 class="entry"><span class="left">The Coordination Tax: Field Artillery Engagement Simulation</span><span class="right">2026</span></h3>
     <p class="subentry"><span class="left">Python, Streamlit, and static client-side build</span><span class="right"></span></p>
     <p class="annot">Models field artillery engagement effectiveness across four reference platforms (M777A2, M109A7 Paladin, M142 HIMARS, and 2S33 Msta-SM2) through a dimensionless framework composing Amdahl's Law with exponential target perishability decay, isolating the coordination tax: the procedural delay that fires clearance imposes regardless of network speed. Features platform-specific weapon behavior, twenty-two academic citations, seven empirical scenario presets drawn from RUSI commentary on the Russo-Ukrainian War, and live-updating visualizations including a tactical engagement diorama, phase-decomposition timeline, and perishability decay curve. Operates as a self-contained analytical instrument, with parameterized inputs that let users test how far faster sensor-to-shooter links can improve engagement outcomes when clearance delay holds constant.</p>
-    <p class="url"><a href="https://alyssaagard.github.io/coordination-tax/">https://alyssaagard.github.io/coordination-tax/</a></p>
+    <div class="links">
+      <p>Simulation: <a href="https://alyssaagard.github.io/coordination-tax/">https://alyssaagard.github.io/coordination-tax/</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/coordination-tax">https://github.com/alyssaagard/coordination-tax</a></p>
+    </div>
 
     <h3 class="entry"><span class="left">ATLAS: Advanced Threat-Level Analysis and Simulation</span><span class="right">2026</span></h3>
     <p class="subentry"><span class="left">Browser-based crisis wargaming platform, React</span><span class="right"></span></p>
     <p class="annot">A research instrument for testing escalation thresholds, signaling dynamics, and the structural sources of inadvertent escalation under incomplete information, modeled on the NSC simulation methodology used at the National Defense University, Naval War College, and RAND. Users navigate multi-turn crisis scenarios through the DIME framework while an algorithmic White Cell adjudicates outcomes, a Red Cell generates adversary responses, and an eight-level escalation ladder tracks the trajectory toward or away from conflict. Ships with Taiwan Strait and NATO Baltic flank scenarios, a custom scenario builder, randomized injects, force disposition tracking, and a comprehensive After Action Review. Fully standalone with no external dependencies.</p>
-    <p class="url"><a href="https://alyssaagard.github.io/atlas-wargame/">https://alyssaagard.github.io/atlas-wargame/</a></p>
+    <div class="links">
+      <p>Wargame: <a href="https://alyssaagard.github.io/atlas-wargame/">https://alyssaagard.github.io/atlas-wargame/</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/atlas-wargame">https://github.com/alyssaagard/atlas-wargame</a></p>
+    </div>
 
     <h3 class="entry"><span class="left">Degraded Constellation: Counterspace Geospatial Simulation</span><span class="right">2026</span></h3>
     <p class="subentry"><span class="left">Interactive geospatial simulation</span><span class="right"></span></p>
     <p class="annot">Models the effects of PLA antisatellite operations on United States missile warning coverage during a Taiwan Strait contingency. Users strike individual SBIRS and OPIR satellites to observe how constellation degradation simultaneously erodes conventional theater awareness and nuclear early warning, generating the escalation ambiguity that Acton's damage-limitation framework identifies as most dangerous. Companion analytical tool to "Deterrence in Orbit," with parameter sets supporting scenario variation across attack timing, target selection, and constellation resilience assumptions.</p>
-    <p class="url"><a href="https://alyssaagard.github.io/degraded-constellation/">https://alyssaagard.github.io/degraded-constellation/</a></p>
+    <div class="links">
+      <p>Simulation: <a href="https://alyssaagard.github.io/degraded-constellation/">https://alyssaagard.github.io/degraded-constellation/</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/degraded-constellation">https://github.com/alyssaagard/degraded-constellation</a></p>
+    </div>
+
+    <h3 class="entry"><span class="left">A Bridge of Gold: A First-Person Simulation of the Battle of Monmouth, June 28, 1778</span><span class="right">2026</span></h3>
+    <p class="subentry"><span class="left">Browser-based historical simulation, JavaScript and SVG</span><span class="right"></span></p>
+    <p class="annot">Places the player upon the field that Washington's decision to strike, taken against Charles Lee's counsel at the Hopewell council of war, brought into being, through six American perspectives ranging from a private of the Pennsylvania Line and a matross of Oswald's Battery to a New Jersey militiaman of Dickinson's Brigade and Washington himself. Treats the day's heat as a first-class mechanic, grounded in the documented toll of heat and fatigue upon both armies, and tracks the player across an original phase-based SVG map of the battlefield and a campaign map of the marches across New Jersey. Every scene carries a note tagged Documented, Reconstructed, or Legend, so that the Molly Pitcher story and kindred accretions are marked as such, and the Washington role offers genuine counterfactual branch points whose endings distinguish history from divergence. Chronology, terrain, and command narrative follow the modern scholarly reconstruction, principally Lender and Stone's <em>Fatal Sunday</em>, the proceedings of the Lee court-martial, and the battlefield archaeology conducted at Monmouth Battlefield State Park.</p>
+    <div class="links">
+      <p>Simulation: <a href="https://alyssaagard.github.io/a-bridge-of-gold/">https://alyssaagard.github.io/a-bridge-of-gold/</a></p>
+      <p>Repository: <a href="https://github.com/alyssaagard/a-bridge-of-gold">https://github.com/alyssaagard/a-bridge-of-gold</a></p>
+    </div>
   </section>
 
   <!-- ============ PRODUCTION SOFTWARE ============ -->
@@ -407,6 +460,7 @@ This work rests upon a formation in history, anthropology, and archaeology, with
       <li>Archival and primary source research</li>
       <li>Constructive simulation and wargame design for escalation and decision-making research</li>
       <li>Quantitative analysis: descriptive and inferential statistics, HAC regression, Monte Carlo simulation, sensitivity analysis</li>
+      <li>Defense budget reconciliation across request, authorization, and appropriation documents, and military personnel cost modeling</li>
       <li>Geospatial modeling and simulation</li>
       <li>Financial and econometric modeling in code, applied to questions of political economy</li>
       <li>Applied software development supporting reproducible defense and policy research</li>
@@ -492,7 +546,7 @@ This work rests upon a formation in history, anthropology, and archaeology, with
     </ul>
   </section>
 
-  <p class="updated">Last updated September 16, 2026.</p>
+  <p class="updated">Last updated September 27, 2026.</p>
 
 </main>
 
